@@ -1,7 +1,6 @@
 const Nombre = [];
 const Pagos = [];
 const Lista = document.getElementById("Grupo_Lista");
-const Total = document.getElementById("Total");
 const usuario = document.getElementById("Nombre");
 const gasto = document.getElementById("Gasto");
 
@@ -35,7 +34,7 @@ function Sumar_Valores() {
 function Pago_Total_y_Singular() {
   const Suma_Pagos = Sumar_Valores(Pagos);
   const Pago_Individual = Suma_Pagos / Nombre.length;
-  Total.innerText = `En total a pagar: ${Suma_Pagos} pago individual de: ${Pago_Individual.toFixed(
+  Total_Pagos.innerText = `En total a pagar: ${Suma_Pagos} pago individual de: ${Pago_Individual.toFixed(
     2
   )} `;
 }
